@@ -6,7 +6,7 @@
  * @parent: parent node
  * @value: node value
  * @color: node color
- * Return: rb_tree_t*
+ * Return: rb_tree_t
  */
 rb_tree_t *rb_tree_node(rb_tree_t *parent, int value, rb_color_t color)
 {

@@ -1,0 +1,15 @@
+{
+    "configurations": [
+      {
+        "name": "C Debug",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/rb_tree_valid",
+        "args": [],
+        "stopAtEntry": true,
+        "cwd": "${cwd}",
+        "externalConsole": true,
+        "MIMode": "gdb"
+      }
+    ]
+}
