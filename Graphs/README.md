@@ -5,6 +5,8 @@ Graphs are used to represent networks
 
 In a tree (binary or N-ary), a node can only be connected to its parent and children. In a graph, each vertex can be connected to every other vertex of the graph
 
+a graph is composed of what we call vertices or vertexes or nodes and a connection between this nodes is called an edge
+
 # Type of graphs
 
 ## Unidirect graph
@@ -65,3 +67,11 @@ typedef struct vertex_s
 
 vertex_t graph[NB_VERTICES];
 ```
+
+## Adjacency linked list
+
+same as the adjacency list described just above, but instead of having an array of vertices, we are going to use a linked a list of vertices. The reason is that to be able to add vertices to the graph, without having to realloc the entire array every time.
+
+on top of that, we are going to store more informations in our vertex structure:
+    * we will store it's number of edges.
+    * we will also store it's index in the adjacency list. this will help us for future algorithms.
