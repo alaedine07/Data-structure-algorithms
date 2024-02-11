@@ -28,3 +28,5 @@ typedef struct heap_s
     int (*data_cmp)(void *, void *);
     binary_tree_node_t *root;
 } heap_t;
+
+heap_t *heap_create(int (*data_cmp)(void *, void *));
